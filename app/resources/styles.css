@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.context {
+  width: 500px;
+  height: 500px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group > input {
+    width: 240px;
+}
+
+#group-surname {
+    margin-left: 20px;
+}
+
+.officer {
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+  text-align: center;
+  font-weight: normal;
+}
+
+h4 {
+  text-align: justify;
+  font-weight: normal;
+}
+
+input {
+    width: 500px;
+    height: 30px;
+    border: 1px #037aff solid;
+    border-radius: 5px;
+    font-size: 20px;
+    color: gray;
+}
+
+.description {
+    font-size: 15px;
+    color: gray;
+}
+
+.form > *{
+    margin-top: 20px;
+}
+
+.btn {
+  background: #037aff;
+  color: #ffffff;
+  border-radius: 5px;
+  width: 70px;
+  height: 40px;
+  border: none;
+}
+
+.message {
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+    font-size: 20px;
+    display: none;
+    padding: 1px;
+}
+
+.error {
+    display: block;
+    background: #F8D7DA;
+    color: #9A313D;
+    border: 1px #9A313D solid;
+}
+
+.info {
+    display: block;
+    background: #D4EDDA;
+    color: #6C8454;
+    border: 1px #6C8454 solid;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Companies House </title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="context">
+            <header>
+                <h1> Companies House Search </h1>
+                <h4>
+                    Enter name company name and officer of company as registered with companies house to return the
+                    company's registered address.
+                </h4>
+            </header>
+            <section class="form">
+                <div>
+                    <p> Company Name </p>
+                    <input type="text" name="companyName" id="companyName" placeholder="Registered company name" />
+                    <span class="description"> The company name as is registered with Companies House </span>
+                </div>
+
+                <div class="officer">
+                    <div class="input-group">
+                        <p> First Name </p>
+                        <input type="text" name="firtName" id="firstName" placeholder="First Name" />
+                    </div>
+                    <div class="input-group" id="group-surname">
+                        <p> Surname </p>
+                        <input type="text" name="surname" id="surname" placeholder="Surname" />
+                    </div>
+                </div>
+
+                <div id="message" class="message"></div>
+
+                <button class="btn" id="btn"> Submit </button>
+            </section>
+        </div>
+    </div>
+    <script src="scripts.js" type="text/javascript"></script>
+</body>
+
+</html>

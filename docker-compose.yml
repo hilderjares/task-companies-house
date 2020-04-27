@@ -1,0 +1,19 @@
+version: "3.4"
+
+services:
+  cli:
+    container_name: task-cli
+    command: "composer install"
+    build:
+      context: ./docker
+      target: cli
+    volumes:
+      - ./:/var/www
+
+  app:
+    container_name: task-app
+    build: ./docker
+    ports:
+      - 8080:80
+    volumes:
+      - ./:/var/www
